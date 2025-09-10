@@ -1,1 +1,2 @@
-# ist263 domo
+# ist263
+literally just a lab for my college class
