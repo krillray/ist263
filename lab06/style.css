@@ -3,3 +3,7 @@ h1 {color:navy;font-size: 2em;}
 h2 {color: navy;size: 1.5em;}
 .special {color:purple}
 .evenrow{background-color:red}
+.h2l{font-size: 1em;}
+.linka{color: black;}
+a{text-decoration: none;}
+a:hover{text-decoration: underline; color: darkblue;}
