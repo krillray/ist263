@@ -52,4 +52,83 @@ form input, form textarea {
 
 .center{border: 5px solid #000000;}
 
+/* Centering heading */
+.center-heading {
+    text-align: center;
+    color: #FFD500;
+    margin-top: 20px;
+}
+
+/* Intro text */
+.intro {
+    color: #ffffff;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+/* Flexbox 2: two columns (main + sidebar) */
+.flexbox2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px;
+    gap: 20px;
+}
+
+/* Flexbox 1: five icons */
+.flexbox1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 3;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Each skill block */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Sidebar styles */
+.otherskills {
+    flex: 1;
+    background-color: #FDC500;
+    color: #000000;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.otherskills h2 {
+    text-align: center;
+    color: #3D0066;
+}
+
+.otherskills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.otherskills li {
+    padding: 5px 0;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 800px) {
+    .flexbox2 {
+        flex-direction: column;
+    }
+}
+
 
