@@ -1,15 +1,3 @@
-@media only screen and (max-width:800px) 
-    {small {
-        background-color: blue;
-    display: none;}
-    }
-@media only screen and (min-width:800px) 
-    {big {
-        
-        background-color: rgb(255, 0, 0);
-    display: none;}
-        
-    }
 nav{background-color:#FFEE32; padding: 10px; margin-bottom: 30px;}
 nav a{color: #5C0099;}
 nav a:hover{background-color: #FDC500;}
@@ -143,3 +131,16 @@ form input, form textarea {
     }
 }
 
+
+@media only screen and (max-width:800px) 
+    {small {
+        background-color: blue;
+    display: none;}
+    }
+@media only screen and (min-width:800px) 
+    {big {
+        
+        background-color: rgb(255, 0, 0);
+    display: none;}
+        
+    }
