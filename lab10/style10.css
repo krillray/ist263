@@ -37,7 +37,10 @@ p{color: #000000;}
     border-radius: 10px;
 }
 
-.row2{margin-top: 30px;}
+.row2{margin-top: 30px;
+    flex-wrap: wrap;
+
+}
 
 iframe{width: 100%;
     border-radius: 10px;}
@@ -132,15 +135,11 @@ form input, form textarea {
 }
 
 
-@media only screen and (max-width:800px) 
-    {small {
-        background-color: blue;
-    display: none;}
+.imgr {
+    max-width: 100%;
+}
+
+@media only screen and (max-width:600px) {
+    nav a{display: block;
     }
-@media only screen and (min-width:800px) 
-    {big {
-        
-        background-color: rgb(255, 0, 0);
-    display: none;}
-        
-    }
+}
