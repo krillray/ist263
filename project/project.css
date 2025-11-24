@@ -1,0 +1,235 @@
+/*
+    CSS for BuildBasics index.html
+    Based on image_c25418.jpg
+*/
+
+/* --- General & Typography --- */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+/* --- Header and Navigation --- */
+header {
+    /* FIX: Changed background to a solid dark color (#333) for maximum contrast */
+    background-color: #5a67c0; 
+    
+    color: white; 
+    padding: 20px 5%;
+    position: absolute; 
+    width: 100%;
+    z-index: 1000; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    top: 0; 
+    left: 0;
+}
+
+header h1 {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto; 
+}
+
+header nav a {
+    margin-left: 30px; 
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+
+#hero-banner {
+    position: relative;
+    height: 450px; 
+    overflow: hidden;
+}
+
+#hero-banner figure {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+#welcome-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Dark overlay color (Dark Blue/Purple from the image) */
+    background-color: #5a67c0; 
+    color: white;
+    padding: 20px 5%;
+}
+
+#welcome-text h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+/* --- Introduction Section (#introduction) --- */
+#introduction {
+    padding: 40px 5%;
+    max-width: 900px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#introduction h2 {
+    /* Style for 'Then This Site is just for you!' */
+    color: #444;
+    font-size: 2.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#introduction p {
+    margin-bottom: 15px;
+}
+
+#introduction ul {
+    list-style: none; 
+    text-align: left;
+    margin: 20px auto 30px;
+    padding-left: 0;
+    max-width: 400px; /* Constrain list width for centering */
+}
+
+#introduction li {
+    padding-left: 1.5em; 
+    position: relative;
+}
+
+/* Custom bullet point styling */
+#introduction li::before {
+    content: "•"; 
+    position: absolute;
+    left: 0;
+    color: #5a67c0; /* Match main accent color */
+    font-weight: bold;
+}
+
+/* --- "Start Learning Now" Button Styling --- */
+#introduction a[href="guide.html"] {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #5a67c0; 
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+#introduction a[href="guide.html"]:hover {
+    background-color: #4a549e;
+}
+
+/* --- Learning Guides (#learning-guides) --- */
+#learning-guides {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#learning-guides h2 {
+    /* Style for 'Learning Guides' bar */
+    background-color: #333; 
+    color: white;
+    padding: 15px 5%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#learning-guides > article {
+    width: 45%; /* Set width for two columns */
+    max-width: 400px;
+    border: none; /* Removed border */
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for definition */
+    margin: 0 10px; /* Space between the two articles */
+}
+
+
+main > section:last-of-type {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+#learning-guides img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+#learning-guides h3 {
+    padding: 15px 15px 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#learning-guides article p {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+
+#learning-guides article p:last-of-type {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.9); 
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 0;
+}
+
+#learning-guides article p:last-of-type a {
+    color: white;
+}
+
+footer {
+    padding: 15px 0;
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer nav a {
+    color: #ccc;
+    margin: 0 5px;
+}
