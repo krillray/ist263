@@ -143,3 +143,7 @@ form input, form textarea {
     nav a{display: block;
     }
 }
+
+.skip{
+    color: #FDC500;
+}
