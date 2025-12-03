@@ -1,11 +1,13 @@
 nav{background-color:#FFEE32; padding: 10px; margin-bottom: 30px;}
 nav a{color: #5C0099;}
 nav a:hover{background-color: #FDC500;}
-.linka{color:#C86BFA ;}
+.linka{color:#4D4D4D ;}
 .linka:hover{text-decoration: underline;}
 body{background-color:#3D0066 ;}
 h1{color: #FFD500;}
-p{color: #000000;}
+h2{color:#FFFFFF}
+p{color: #FFFFFF;}
+li{color: #FFFFFF;}
 .footer{ margin-top: 20px; padding: 0 10px;}
 .copyright{float: left;}
 .quote{float: right;}
