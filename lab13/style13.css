@@ -1,5 +1,9 @@
 /*TO SKIP TO MAIN PARTS OF PAGES, PRESS THE TAB KEY TO MAKE A LINK APPEAR*/
-
+@font-face {
+    font-family:"GoogleSansCode";
+    src: url(fonts/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf);
+}
+h1.begin0{font-family:"GoogleSansCode";}
 nav{background-color:#FFEE32; padding: 10px; margin-bottom: 30px;}
 nav a{color: #5C0099;}
 nav a:hover{background-color: #FDC500;}
