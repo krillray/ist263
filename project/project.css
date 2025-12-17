@@ -1,3 +1,23 @@
+/* --- 1. FONTS & SHARED STYLES --- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.dm-sans-nice {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nicetext {
+    font-family: "DM sans";
+    color: black;
+}
 
 * {
     box-sizing: border-box; 
@@ -16,9 +36,9 @@ a {
     color: inherit;
 }
 
+/* --- 2. HEADER & NAVIGATION --- */
 header {
     background-color: #5a67c0; 
-    
     color: white; 
     padding: 20px 5%;
     position: absolute; 
@@ -47,7 +67,7 @@ header nav a {
     font-size: 0.9em;
 }
 
-
+/* --- 3. INDEX & HERO SECTION --- */
 #hero-banner {
     position: relative;
     height: 450px; 
@@ -71,7 +91,6 @@ header nav a {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* Dark overlay color (Dark Blue/Purple from the image) */
     background-color: #5a67c0; 
     color: white;
     padding: 20px 5%;
@@ -82,7 +101,6 @@ header nav a {
     margin-bottom: 5px;
 }
 
-/* --- Introduction Section (#introduction) --- */
 #introduction {
     padding: 40px 5%;
     max-width: 900px; 
@@ -91,7 +109,6 @@ header nav a {
 }
 
 #introduction h2 {
-    /* Style for 'Then This Site is just for you!' */
     color: #444;
     font-size: 2.2em;
     font-style: italic;
@@ -107,7 +124,7 @@ header nav a {
     text-align: left;
     margin: 20px auto 30px;
     padding-left: 0;
-    max-width: 400px; /* Constrain list width for centering */
+    max-width: 400px;
 }
 
 #introduction li {
@@ -115,16 +132,14 @@ header nav a {
     position: relative;
 }
 
-/* Custom bullet point styling */
 #introduction li::before {
     content: "•"; 
     position: absolute;
     left: 0;
-    color: #5a67c0; /* Match main accent color */
+    color: #5a67c0; 
     font-weight: bold;
 }
 
-/* --- "Start Learning Now" Button Styling --- */
 #introduction a[href="guide.html"] {
     display: inline-block;
     padding: 15px 40px;
@@ -142,14 +157,54 @@ header nav a {
     background-color: #4a549e;
 }
 
-/* --- Learning Guides (#learning-guides) --- */
+/* --- 4. GUIDE PAGE (PAGE 2) STYLING --- */
+#introduction section.nicetext {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: left; /* Restores normal guide alignment */
+}
+
+.build-dl {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.build-dl dt {
+    font-weight: bold;
+    color: #5a67c0;
+    margin-top: 15px;
+}
+
+.build-dl dd {
+    border-left: 2px solid #5a67c0;
+    padding-left: 15px;
+    margin-left: 10px;
+    font-size: 0.95em;
+}
+
+.build-ol {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+.build-ol li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* --- 5. LEARNING GUIDES (INDEX CARDS) --- */
 #learning-guides {
     text-align: center;
     padding-bottom: 50px;
 }
 
 #learning-guides h2 {
-    /* Style for 'Learning Guides' bar */
     background-color: #333; 
     color: white;
     padding: 15px 5%;
@@ -159,16 +214,15 @@ header nav a {
 }
 
 #learning-guides > article {
-    width: 45%; /* Set width for two columns */
+    width: 45%; 
     max-width: 400px;
-    border: none; /* Removed border */
+    border: none; 
     overflow: hidden;
     text-align: left;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for definition */
-    margin: 0 10px; /* Space between the two articles */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin: 0 10px; 
 }
-
 
 main > section:last-of-type {
     display: flex;
@@ -196,9 +250,7 @@ main > section:last-of-type {
     font-size: 0.9em;
 }
 
-
 #learning-guides article p:last-of-type {
-
     position: absolute;
     bottom: 0;
     left: 0;
@@ -214,15 +266,283 @@ main > section:last-of-type {
     color: white;
 }
 
+/* --- PAGE 3 SPECIFIC: IMAGE ALIGNMENT & CENTERING --- */
+
+/* 1. Moves the top of Page 3 down so the image starts at the navbar end */
+.float-container {
+    margin-top: 80px; 
+    padding: 40px 10%; 
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center; /* Centers the image and intro text */
+}
+
+/* 2. Centers the image and keeps it at the "pinched" smaller size */
+.float-img {
+    float: none; 
+    display: block;
+    margin: 0 auto 30px; 
+    width: 30%; 
+    max-width: 380px;   
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 3. Centers all the Tool Sections and their text */
+.tool-section, 
+.conclusion-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px 5%;
+    font-size: 1.25rem; /* Larger text size */
+}
+
+/* 4. Centers the bullet lists while keeping the text left-aligned inside the block */
+.tool-section ul, 
+.conclusion-section ul,
+.break-inner ul {
+    display: inline-block; 
+    text-align: left;      
+    list-style-position: inside;
+    margin: 20px auto;
+}
+
+/* 5. BIGGER TASK MANAGER SECTION */
+.visual-break {
+    background-color: #5a67c0;
+    color: white;
+    padding: 80px 0; /* Makes the blue bar taller */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 60px -50vw; 
+    text-align: center;
+}
+
+.break-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.visual-break h3 {
+    color: white;
+    font-size: 2.5rem; /* Large header */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.visual-break p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.visual-break ul {
+    font-size: 1.3rem;
+}
+
+/* --- FOOTER STYLING --- */
 footer {
-    padding: 15px 0;
     background-color: #333;
     color: #ccc;
     text-align: center;
-    font-size: 0.8em;
+    padding: 30px 0;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 50px; /* Space between the conclusion and the footer */
 }
 
-footer nav a {
-    color: #ccc;
-    margin: 0 5px;
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- INSTRUCTOR FEEDBACK UPDATES --- */
+
+.hero-pop {
+    color: #ffca28; /* Gold color for 'pop' */
+    font-size: 1.8rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* 2. Fix the Learning Guides title (Removes the large square feel) */
+/* This overrides the black background version specifically for the header */
+#learning-guides h2 {
+    background-color: transparent; 
+    color: #333;
+    font-size: 2.2em;
+    margin-top: 40px;
+    border-bottom: 2px solid #5a67c0;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+/* --- 8. MANDATORY MEDIA QUERY --- */
+@media screen and (max-width: 768px) {
+    header {
+        position: relative; 
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    header h1 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 0.8em;
+    }
+
+    #hero-banner {
+        height: auto; 
+        min-height: 300px;
+    }
+
+    #welcome-text {
+        position: relative; /* Prevents text overlap on small screens */
+    }
+
+    #learning-guides > article {
+        width: 90%; 
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Makes headers slightly smaller and cleaner on mobile */
+    }
+    
+    .float-img {
+        width: 80% !important; /* Ensures the Tips image fits on phones */
+    }
+}
+
+/* --- QUICK TIPS BORDER & MODERN CARD --- */
+
+.quick-tips-container {
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.tips-card-modern {
+    border: 3px solid #5a67c0; /* This is the blue border */
+    border-radius: 15px;       /* Smooth rounded corners */
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fdfdfd; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Adds depth */
+}
+
+.tips-card-modern h3 {
+    color: #5a67c0;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tips-list-modern {
+    list-style: none;
+    padding: 0;
+}
+
+.tips-list-modern li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee; /* Light divider between tips */
+    font-family: 'DM Sans', sans-serif;
+}
+
+.tips-list-modern li:last-child {
+    border-bottom: none; /* Removes border from the last item */
+}
+
+.tips-list-modern li strong {
+    color: #5a67c0;
+}
+
+/* --- FIXING THE CENTER FOR STEP 2 AND 3 --- */
+
+/* 1. This centers the white 'Step' boxes on the page */
+#introduction section.nicetext {
+    margin: 40px auto;   /* 'auto' is what pushes it into the center */
+    max-width: 900px;    /* Prevents it from stretching to the edges */
+    text-align: center;  /* Centers the 'Step 2' title and text */
+    padding: 30px;
+}
+
+/* 2. This centers the actual Step 3 header */
+#introduction h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 3. This centers the bulleted/numbered list as a block */
+.build-ol {
+    display: inline-block; /* Allows the list to be centered as a unit */
+    text-align: left;      /* Keeps the text aligned left inside the centered list */
+    max-width: 600px;
+    margin: 0 auto;        /* Centers the list block */
+    padding-left: 20px;    /* Gives room for the numbers */
+}
+
+/* 4. Fix for the List container */
+.guide-list-wrapper {
+    text-align: center;    /* Parent container that forces the list to the middle */
+    width: 100%;
+}
+
+/* --- THE BIG FIX FOR STEP 4 & 5 --- */
+
+/* This centers the sections and gives them the "Card" look from Step 2 */
+#introduction .nicetext, 
+main + .nicetext { 
+    margin: 60px auto !important; /* Forces centering and spacing */
+    max-width: 900px;
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Matches Step 2 shadow */
+}
+
+/* Makes the Headers for 4 and 5 much bigger */
+.nicetext h2 {
+    font-size: 2.8rem; 
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Makes the Paragraph text for 4 and 5 much bigger */
+.nicetext p {
+    font-size: 1.4rem; 
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Special styling for the 'Congratulations' text */
+.nicetext strong {
+    display: block;
+    margin-top: 20px;
+    color: #5a67c0; /* Uses your theme blue */
+    font-size: 1.6rem;
 }
